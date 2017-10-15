@@ -1,0 +1,18 @@
+﻿{
+  "title": "Date",
+  "type": "object",
+  "properties": {
+    "firstDate": {
+      "type": "string",
+      "format": "date",
+      "lteDaysFromToday": "1",
+      "gteDateField": "secondDate"
+    },
+    "secondDate": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "format": "date-field",
+  "required": [ "firstDate", "secondDate" ]
+}

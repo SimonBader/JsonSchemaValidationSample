@@ -47,13 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomValidators\Is.cs" />
+    <Compile Include="CustomValidators\DateFieldsValidator.cs" />
+    <Compile Include="CustomValidators\DateValidator.cs" />
     <Compile Include="Model\Address.cs" />
+    <Compile Include="Model\Dates.cs" />
     <Compile Include="Model\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SchemaGenerator.cs" />
+    <Compile Include="Validator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <EmbeddedResource Include="Schemas\dates-schema.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
